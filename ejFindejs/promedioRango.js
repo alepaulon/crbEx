@@ -28,4 +28,30 @@ function promedioRango(array, inicio, fin){
 console.log(promedioRango(arr,150,500));
 console.log(promedioRango(arr,100,600));
 
+// opc 2
 
+const arrNumbers = [10, 12, 15, 18, 45, 66, 89];
+const findAverage = (array, start, finish) => {
+
+    let numbersToAverage = array.slice(start, finish + 1);
+    let divide = numbersToAverage.length
+    let sum = numbersToAverage.reduce((previous, current) => {
+        return previous + current
+    })
+    let average = sum /= divide
+    return console.log(average)
+};
+findAverage(arrNumbers, 3, 6);
+
+//opc 3
+
+const array2 = [7, 8, 8, 6, 5, 6, 4, 10];
+function devuelvePromedio(array) {
+  const sumaTotal = array.reduce(function(acc, value) {
+    return acc + value;
+  }, 0);
+  const promedio = sumaTotal / array.length;
+  return promedio;
+}
+const promedioArray2 = devuelvePromedio(array2);
+console.log(promedioArray2);

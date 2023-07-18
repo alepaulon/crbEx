@@ -12,5 +12,16 @@ function quintuplicarArray(a, multiplo){
     return console.log(arrX5);
 }
 
+
+// opc 2
+
+/*
+const quintuplicarArray(arrOfNumbers) => {
+    const quintCopy = arrOfNumbers.map((num) => {
+        return (number *= 5);
+    });
+}
+*/ 
+
 quintuplicarArray(arr,5);
 quintuplicarArray(arr2,5);
